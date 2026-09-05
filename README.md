@@ -2,7 +2,23 @@
 
 Lessons from operating **Grok Bot (Orangutan / Chief of Staff)** alongside an existing Claude Code fleet — written so others can reuse the patterns. Companion spirit to [`running-an-ai-fleet`](https://github.com/jasonpalmer1/running-an-ai-fleet), [`claude-operator-kit`](https://github.com/jasonpalmer1/claude-operator-kit), and [`tiered-agent-memory`](https://github.com/jasonpalmer1/tiered-agent-memory).
 
-No product secrets. No credentials. Just ops.
+No product secrets. No credentials. Just ops. Sanitization rules: [`playbooks/00-public-safe.md`](./playbooks/00-public-safe.md).
+
+## Architecture playbooks (2026-09-05)
+
+Practical defaults. Start here if you are rolling a CoS chat, minting URLs, or about to let a bot “just smash it.”
+
+| Playbook | Rule of thumb |
+|----------|----------------|
+| [Fleet chat hygiene](./playbooks/01-fleet-chat-hygiene.md) | Measurable WATCH / ROLL NOW / CRITICAL cut lines. Never Delete a CoS chat — spawn a new one and redirect. Spawn agents only for new roles. CoS owns durable memory. Jason gets one-tap cards. |
+| [Bot triage / Cloud Agents default](./playbooks/02-bot-triage-cloud-agents.md) | Bots triage and coordinate. Real code and ships go through Cursor Cloud Agents / IDE, not bot smash loops. |
+| [COSswitch / state-change routing](./playbooks/03-cosswitch-routing.md) | After a roll, one live CoS inbox. CLEAR / HIGH / state-change only. No ack-only spam. Batch Highs. |
+| [URL surface factories](./playbooks/04-url-surface-factories.md) | Taxonomy → factory schema → hubs-first mint caps → sitemap + IndexNow. Apex + trailing-slash canonicals. No flood. |
+| [Organic-only growth](./playbooks/05-organic-only-growth.md) | SEO, internal deep-links, CTR, crawl. No social spam, bought traffic, or share-post blasts. Count humans, not bots. |
+
+Dated one-liners: [`LESSONS.md`](./LESSONS.md). Index of the playbook folder: [`playbooks/README.md`](./playbooks/README.md).
+
+Public product names used as examples: Who’s Starting, CanAIFeel, Wafergraph, Iron Strike — and public apexes already on the open web (`whosstarting.com`, `canaifeel.com`, `wafergraph.com`).
 
 ## Why this exists
 
@@ -37,6 +53,12 @@ The hub should propose process fixes (room noise, smash caps, T1 diet) — not o
 ### 5. Public writeups > private folklore
 If a lesson is real, sanitize it and put it on GitHub. Future-you and strangers both benefit. Credentials never ride along.
 
+### 6. Bots are not the compiler
+CoS and specialist bots triage, batch, and watch cut lines. Coding and merges go through Cursor Cloud Agents or the IDE. A bot smash loop is how you buy the same High twice.
+
+### 7. Factory URLs are a mint, not a dump
+Taxonomy and hubs first; leaf pages behind a cap; sitemap + IndexNow on the canonical apex. Growth is crawl + human CTR, not a share-blast.
+
 ## Suggested operating defaults for a Grok hub
 
 | Situation | Do |
@@ -47,16 +69,23 @@ If a lesson is real, sanitize it and put it on GitHub. Future-you and strangers 
 | Group room HOLD | Lanes 1:1; room gets URL + cleared/merged only |
 | Memory | T1 tiny; episode → log; archive → Drive/hub |
 | Monetization claims | No “edge” sales without proof bar (product-specific) |
+| CoS transcript fat | Trip WATCH / ROLL NOW / CRITICAL; spawn new CoS chat; never Delete |
+| New coding work | Cloud Agent / IDE, not a bot patch in the room |
+| CoS chat rolled | COSswitch: fleet reports only to the live inbox |
+| New public URLs | Hubs first, mint cap, sitemap + IndexNow, apex + slash canonicals |
+| Growth idea | Organic only; human-view metrics; no bought or blasted traffic |
 
 ## What we are still measuring
 
 - Delegation ratio under Grok (lightweight close-out note vs full Claude ledger).
 - Whether smash caps reduce spend without shipping worse search UX.
 - Drive mirror freshness vs Claude hub dual-write lag.
+- Whether WATCH / ROLL NOW cut lines catch re-discovery before CRITICAL.
+- Factory batch indexation vs human CTR (do mint caps actually protect crawl budget).
 
 ## Status
 
-Living document. Started 2026-09-04 while crushing a season sports app + wiring analytics/HQ under a multi-bot Grok fleet.
+Living document. Started 2026-09-04 while crushing a season sports app + wiring analytics/HQ under a multi-bot Grok fleet. Architecture playbooks added 2026-09-05 (chat rolls, Cloud Agents default, COSswitch, URL factories, organic growth).
 
 ## License
 
