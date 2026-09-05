@@ -23,6 +23,8 @@ Split-brain (two CoS inboxes receiving work) is CRITICAL under [fleet chat hygie
 
 If the message is not CLEAR, HIGH, or a state change, do not send it.
 
+**One user ping** (HARD LOCK 2026-09-05): the human gets one card per real CLEAR, per blocker that needs a tap, or per apex flip. Mid-smash, ack-only, and multi-topic essays stay silent. See [bot token thrift / proactive CoS](./06-bot-token-thrift-and-proactive-cos.md).
+
 ## What must not be sent
 
 - “Ack — on it”

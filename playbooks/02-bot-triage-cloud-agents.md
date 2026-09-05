@@ -14,8 +14,13 @@ A Grok Bot room is a good dispatcher and a bad compiler. Using bots to smash-loo
 | Preview / visual QA | One smash pack per tip, then stop | CLEAR, or a follow-up PR — not another tip |
 | Deploy / merge | Human one-tap or the lane that owns the repo | Live URL + state change. No ack. |
 | Docs-only public writeups (this repo) | Cloud Agent or IDE | PR. Bots may draft the outline only. |
+| Form-shaped / structured desktop work | Claude Code (or the desktop executor that owns that surface) | Checklist done. Not a bot smash. |
+| Job-board cards | Job-board lane | Claim, finish, one CLEAR. CoS is not the board. |
+| Long jobs / census / harvest | Background executor | Expectation set; missed SLA noticed. No room poll. |
 
 If a bot is about to edit an app, stop. Open a Cloud Agent (or the IDE) against the repo that owns the working tree. **One owner per repo.**
+
+HARD LOCK (2026-09-05): thrift is how, not what; CoS stays proactive. See [bot token thrift / proactive CoS](./06-bot-token-thrift-and-proactive-cos.md).
 
 ## Why bots don’t smash-ship
 

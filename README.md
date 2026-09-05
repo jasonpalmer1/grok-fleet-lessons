@@ -15,6 +15,7 @@ Practical defaults. Start here if you are rolling a CoS chat, minting URLs, or a
 | [COSswitch / state-change routing](./playbooks/03-cosswitch-routing.md) | After a roll, one live CoS inbox. CLEAR / HIGH / state-change only. No ack-only spam. Batch Highs. |
 | [URL surface factories](./playbooks/04-url-surface-factories.md) | Taxonomy → factory schema → hubs-first mint caps → sitemap + IndexNow. Apex + trailing-slash canonicals. No flood. |
 | [Organic-only growth](./playbooks/05-organic-only-growth.md) | SEO, internal deep-links, CTR, crawl. No social spam, bought traffic, or share-post blasts. Count humans, not bots. |
+| [Bot token thrift / proactive CoS](./playbooks/06-bot-token-thrift-and-proactive-cos.md) | HARD LOCK 2026-09-05. Bot = triage / route / state-change. One user ping per CLEAR, human blocker, or apex flip. Heavy work leaves the room. Scope stays full. CoS resumes stalls without a reminder. Roll at Bot weekly ~8% or fat transcript; never a second CoS. |
 
 Dated one-liners: [`LESSONS.md`](./LESSONS.md). Index of the playbook folder: [`playbooks/README.md`](./playbooks/README.md).
 
@@ -38,11 +39,14 @@ Claude already had the hard parts: disk-as-SoT, hub/lane/worker, tiered memory, 
 Infer from evidence early: which machine holds personal projects vs work-only vs cold backup. Do **not** invent a second home for repos because a laptop flapped offline once. Cold backup ≠ day-to-day workspace.
 
 ### 2. Token thrift is a product feature
-Multi-agent rooms amplify chatter. Default rules that paid off immediately:
+Multi-agent rooms amplify chatter. HARD LOCK (2026-09-05) — [`playbooks/06-bot-token-thrift-and-proactive-cos.md`](./playbooks/06-bot-token-thrift-and-proactive-cos.md):
 - Agents report **state changes only** (preview URL ready, clear/fail, Jason blocker).
-- No ack-only pings.
+- No ack-only pings. No FYI. No mid-smash. No multi-topic essays.
+- **One user ping** per real CLEAR, human blocker, or apex flip.
 - Batch bugs into one smash report; **cap tip iterations** (e.g. ~2 cycles) then ship “good enough” + follow-up PR for edge-case taxonomy.
 - Keep HOLD loops on **1:1 lane chat**, not the whole room.
+- Scope stays **full**. Thrift is how you talk, not which lanes you drop.
+- CoS is **proactive**: resume stalled PRs / tips / Cloud Agents without a reminder.
 
 ### 3. Dual-runtime SoT needs an explicit bridge
 If Claude disk remains canonical, say so in a dated contract file. Symlink bridges beat “migrate everything.” Grok’s own durable memory can live off-laptop; Claude hub dual-writes when the laptop is up. Optional: **Drive tandem mirror** so Claude (or a human) can read Grok memory without the Grok runtime.
@@ -65,11 +69,13 @@ Taxonomy and hubs first; leaf pages behind a cap; sitemap + IndexNow on the cano
 |-----------|----|
 | Ambiguous machine | Prefer evidence (user dirs, project roots); ask only if still ambiguous |
 | Agent FYI with no ask | Stay silent |
+| User-facing update | One ping: real CLEAR, human blocker, or apex flip |
 | Preview / QA loop | One smash pack per tip; then clear or follow-up PR |
 | Group room HOLD | Lanes 1:1; room gets URL + cleared/merged only |
 | Memory | T1 tiny; episode → log; archive → Drive/hub |
 | Monetization claims | No “edge” sales without proof bar (product-specific) |
-| CoS transcript fat | Trip WATCH / ROLL NOW / CRITICAL; spawn new CoS chat; never Delete |
+| CoS transcript fat **or** Bot weekly ~8% | Warn early; trip WATCH / ROLL NOW / CRITICAL; spawn new CoS chat; never Delete; never a second CoS |
+| Operator reminder that a PR / tip / queue exists | CoS already failed. Resume the stall; one CLEAR |
 | New coding work | Cloud Agent / IDE, not a bot patch in the room |
 | CoS chat rolled | COSswitch: fleet reports only to the live inbox |
 | New public URLs | Hubs first, mint cap, sitemap + IndexNow, apex + slash canonicals |
@@ -85,7 +91,7 @@ Taxonomy and hubs first; leaf pages behind a cap; sitemap + IndexNow on the cano
 
 ## Status
 
-Living document. Started 2026-09-04 while crushing a season sports app + wiring analytics/HQ under a multi-bot Grok fleet. Architecture playbooks added 2026-09-05 (chat rolls, Cloud Agents default, COSswitch, URL factories, organic growth).
+Living document. Started 2026-09-04 while crushing a season sports app + wiring analytics/HQ under a multi-bot Grok fleet. Architecture playbooks added 2026-09-05 (chat rolls, Cloud Agents default, COSswitch, URL factories, organic growth, token-thrift HARD LOCK).
 
 ## License
 
