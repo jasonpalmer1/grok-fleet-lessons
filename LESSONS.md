@@ -2,6 +2,36 @@
 
 Dated, one lesson per entry. Facts for future operators — not chat transcripts.
 
+## 2026-09-05 — CoS rolls are spawn-and-redirect, never Delete
+**Symptom:** A fat CoS transcript tempts “just delete it and start over,” which wipes the human audit trail and leaves the fleet posting into a hole.
+**Change:** Measurable WATCH / ROLL NOW / CRITICAL cut lines; flush durable memory; spawn a new CoS chat; COSswitch the fleet; leave the old thread archived.
+**Why share:** Delete looks like hygiene and behaves like amnesia. Playbook: [`playbooks/01-fleet-chat-hygiene.md`](./playbooks/01-fleet-chat-hygiene.md).
+
+## 2026-09-05 — Spawn agents for new roles only
+**Symptom:** Every new task grew a new body in the room; two “CoS” chats and two editors on one repo followed.
+**Change:** New standing role → new agent. Existing role → message or worker. One live CoS inbox.
+**Why share:** Headcount is not parallelism. Playbook: [`playbooks/01-fleet-chat-hygiene.md`](./playbooks/01-fleet-chat-hygiene.md).
+
+## 2026-09-05 — Bots triage; Cloud Agents ship
+**Symptom:** Bot smash loops patched previews in chat, spawned a tip per High, and still missed taxonomy debt.
+**Change:** Bots classify / batch / route. Code and ships go through Cursor Cloud Agents or the IDE. One smash pack per tip, ~2 cycles max.
+**Why share:** A room is a dispatcher, not a compiler. Playbook: [`playbooks/02-bot-triage-cloud-agents.md`](./playbooks/02-bot-triage-cloud-agents.md).
+
+## 2026-09-05 — COSswitch: one live inbox, state-change only
+**Symptom:** After a roll, lanes kept acking in the old chat and dripping Highs one-by-one.
+**Change:** Publish the live inbox pointer; fleet reports CLEAR / HIGH / state-change only; batch Highs; silence FYIs.
+**Why share:** Split-brain hubs plus ack spam is agents² cost. Playbook: [`playbooks/03-cosswitch-routing.md`](./playbooks/03-cosswitch-routing.md).
+
+## 2026-09-05 — URL factories: taxonomy, hubs, cap, then ping
+**Symptom:** Minting every alias as a 200, both slash variants live, sitemap listing previews — crawl budget spent on junk.
+**Change:** Taxonomy → schema → hubs-first mint caps → sitemap + IndexNow. Apex + one trailing-slash rule. No flood.
+**Why share:** CanAIFeel / Wafergraph / Who’s Starting style surfaces die by thin-page flood, not by too few ideas. Playbook: [`playbooks/04-url-surface-factories.md`](./playbooks/04-url-surface-factories.md).
+
+## 2026-09-05 — Organic-only growth, human views only
+**Symptom:** Share-blasts and bot-inflated pageviews get mistaken for demand; the next mint batch ships into empty rooms.
+**Change:** SEO + internal deep-links + CTR + crawl. No social spam, bought traffic, or blast campaigns. Track humans vs bot/datacenter/rig at write time.
+**Why share:** A sitemap ping is not product-market fit. Playbook: [`playbooks/05-organic-only-growth.md`](./playbooks/05-organic-only-growth.md).
+
 ## 2026-09-04 — Tip-smash infinite loops burn the budget
 **Symptom:** Each search High spawned a new tip preview and a full room update cycle.
 **Change:** Batch Highs; ~2 tip cycles max; then merge + follow-up PR for alias taxonomy.
