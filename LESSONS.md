@@ -2,6 +2,21 @@
 
 Dated, one lesson per entry. Facts for future operators — not chat transcripts.
 
+## 2026-09-05 — HARD LOCK: thrift is HOW, scope stays FULL
+**Symptom:** Quiet rooms were mistaken for a smaller portfolio; loud rooms were mistaken for “being thorough.”
+**Change:** Bot = triage / route / real state-change only. One user ping per CLEAR, human blocker, or apex flip. Heavy work goes to Cloud Agents, Claude Code (forms), the job-board lane, or background executors. Lanes keep moving.
+**Why share:** Token diet is chat discipline, not a license to drop work. Playbook: [`playbooks/06-bot-token-thrift-and-proactive-cos.md`](./playbooks/06-bot-token-thrift-and-proactive-cos.md).
+
+## 2026-09-05 — Proactive CoS does not wait to be reminded
+**Symptom:** PRs, tips, and queues sat idle until the operator asked “any update?”
+**Change:** CoS decides when the lock is already on disk, routes immediately, resumes stalled PRs / tips / Cloud Agents, and unblocks queues. Waiting for a reminder is a named miss.
+**Why share:** A hub that only answers is a receptionist. Playbook: [`playbooks/06-bot-token-thrift-and-proactive-cos.md`](./playbooks/06-bot-token-thrift-and-proactive-cos.md).
+
+## 2026-09-05 — Roll at Bot weekly ~8% or fat transcript; no second CoS
+**Symptom:** Weekly spend climbed while the same CoS chat kept writing; the tempting fix was another CoS body.
+**Change:** WATCH around 5–6%; ROLL NOW at ~8% or the existing fat-transcript cut lines. Flush memory and routines first. Spawn-and-redirect. Never Delete. Never two live CoS inboxes.
+**Why share:** 8% is a planned roll, not a crash. A duplicate CoS is split-brain. Playbook: [`playbooks/06-bot-token-thrift-and-proactive-cos.md`](./playbooks/06-bot-token-thrift-and-proactive-cos.md).
+
 ## 2026-09-05 — CoS rolls are spawn-and-redirect, never Delete
 **Symptom:** A fat CoS transcript tempts “just delete it and start over,” which wipes the human audit trail and leaves the fleet posting into a hole.
 **Change:** Measurable WATCH / ROLL NOW / CRITICAL cut lines; flush durable memory; spawn a new CoS chat; COSswitch the fleet; leave the old thread archived.

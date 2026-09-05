@@ -11,5 +11,6 @@ These are patterns, not a map of private infra. Product names below are already 
 | [COSswitch / state-change routing](./03-cosswitch-routing.md) | CoS inbox rolled, or the room is full of acks and duplicate Highs |
 | [URL surface factories](./04-url-surface-factories.md) | Minting pages on CanAIFeel, Wafergraph, Who’s Starting, Iron Strike, or any factory site |
 | [Organic-only growth](./05-organic-only-growth.md) | Someone proposes paid traffic, share-blasts, or vanity view counts |
+| [Bot token thrift / proactive CoS](./06-bot-token-thrift-and-proactive-cos.md) | HARD LOCK (2026-09-05): Bot = triage only; one user ping; full scope; roll at weekly ~8%; CoS moves work unasked |
 
 Hard rules for anything that lands in this repo: [public-safe publishing](./00-public-safe.md).

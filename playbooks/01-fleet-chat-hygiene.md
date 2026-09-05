@@ -22,8 +22,11 @@ Measure the live CoS thread. Do not wait for “it feels long.” Use the first 
 | Re-discovery | 1 ask for a fact already locked on disk this session | 2 such asks in 30 minutes | Fleet acting on a stale lock, or CoS re-litigating a dated decision |
 | Jason queue | 3+ items waiting, not yet batched | 6+ items, **or** any card that is not one-tap | Operator cannot find the ask without scrolling |
 | Inbox identity | Some reports still name the previous CoS chat | Any report to a retired inbox after COSswitch | Two CoS inboxes both receiving fleet traffic |
+| Bot weekly spend (share of the weekly window) | Climbing through ~5–6%; warn | **~8%** | Still writing essays after 8%, or spend is why work stopped |
 
 **WATCH** — write the handoff draft now; finish open CLEAR work; do not start a new smash cycle.
+
+Weekly ~8% is a HARD LOCK (2026-09-05). Same roll procedure; memory and routines survive; never a second CoS. Details: [bot token thrift / proactive CoS](./06-bot-token-thrift-and-proactive-cos.md).
 
 **ROLL NOW** — execute the roll procedure in this playbook before the next delegation.
 
